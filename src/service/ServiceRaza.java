@@ -1,7 +1,6 @@
 package service;
 
 import entidades.RazaClass;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -21,16 +20,13 @@ public  class ServiceRaza {
         Scanner sc = new Scanner ( System.in ).useDelimiter ( "\n" );
 
         ArrayList<RazaClass> lista  = new ArrayList<>();
-
         do {
-            boolean salir= false;
             lista.add (crearPerro ()  );
             System.out.println ("Desea salir? si/no");
-           salir= sc.next ().equalsIgnoreCase ( "no" ) ? true:false;
-        } while (salir );
-
+           // salir= sc.next ().equalsIgnoreCase ( "no" ) ? true:false;
+        } while  (sc.next().equalsIgnoreCase("no") ? true : false);
+        mostrarRaza ( lista );
         return lista;
-
     }
 
 
@@ -42,10 +38,10 @@ public  class ServiceRaza {
 
     }
 
-    public static void menu (ArrayList<RazaClass> lista ) {
+    public static void menu ( ) {
         crearlistaRaza ();
         System.out.println ("PERRERIA :) ");
-        mostrarRaza(   lista  );
+
 
     }
 
