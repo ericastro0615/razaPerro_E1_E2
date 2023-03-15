@@ -9,6 +9,7 @@ public class RazaClass {
     programa pedirá una raza de perro en un bucle, el mismo se guardará en la lista y
     después se le preguntará al usuario si quiere guardar otro perro o si quiere salir. Si decide
     salir, se mostrará todos los perros guardados en el ArrayList.
+
     2 . después de mostrar los perros, al usuario se le pedirá
 un perro y se recorrerá la lista con un Iterator, se buscará el perro en la lista. Si el perro
 está en la lista, se eliminará el perro que ingresó el usuario y se mostrará la lista
